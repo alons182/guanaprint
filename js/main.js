@@ -76,7 +76,7 @@ $(function() {
 		  	
 		 	var url = "/guanaprint/helpers/upload.php";
 			
-			
+			var progress = $('.progress');
  			var bar = $('.bar');
 			var percent = $('.percent');
 			var status = $('#status');
@@ -84,6 +84,7 @@ $(function() {
 		    $('#uploadform').ajaxSubmit({
 
 		    	beforeSend: function() {
+		    		progress.show();
 			        status.empty();
 			        var percentVal = '0%';
 			        bar.width(percentVal)
