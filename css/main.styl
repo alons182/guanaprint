@@ -1,0 +1,247 @@
+@import "nib"
+@import "iconos.styl"
+
+
+
+$fusia = rgb(236, 3, 138)
+$gris = rgb(166, 168, 171)
+$amarillo = rgb(255,241, 0)
+$celeste = rgb(0, 173, 238)
+
+
+html, body
+	margin 0px
+	padding 0px
+	width 100%
+	height 100%
+body
+	color rgb(238, 238, 238) 
+	line-height 22px 
+	font-family Arial, Helvetica, Verdana
+	font-size 16px
+	min-width 360px
+	-webkit-text-size-adjust none
+	background rgb(102, 102, 102)
+h1 
+	margin 0px 0px 10px
+	color rgb(238, 238, 238)
+	line-height 1
+	font-size 60px 
+	font-weight bold
+
+p
+	margin 0px 0px 10px
+
+
+
+#menu 
+	background rgb(34, 34, 34)
+	font-size 16px
+
+	li::after
+		margin-left 60px
+
+	li 
+		a
+			line-height 40px
+
+		a:hover 
+			background-color rgba(0, 0, 0, 0.2)
+
+	.icon 
+		margin 0px 20px 0px 3px 
+		opacity 0.6
+	
+	
+
+
+#page
+	box-shadow none !important
+
+	nav
+		display none
+
+	a#open-icon-header
+		left 0px 
+		top 0px
+		width 60px
+		height 60px
+		display block
+		position absolute
+		font-size 1.5em
+		color #FFF
+		text-decoration none
+		padding .8em
+
+section
+	height 575px
+
+section > div
+	margin auto
+	padding 225px 20px 0px
+	max-width 500px
+
+#home
+	background #FFF
+#about
+	background $fusia
+#services
+	background $amarillo
+#upload
+	background $gris
+#upload > div
+	padding 20px 20px 0px
+
+	.progress
+		position relative 
+		width 400px 
+		border 1px solid #ddd 
+		padding 1px 
+		border-radius 3px
+		top -36px
+		left 88px
+
+		.bar
+			background-color $fusia 
+			width 0% 
+			height 20px 
+			border-radius 3px
+
+		.percent  
+			position absolute 
+			display inline-block 
+			top 3px 
+			left 48% 
+			font-size 12px
+
+#home > div
+	padding 150px 20px 0px
+
+	#logo
+		//width 500px
+		img 
+			width 100%
+	p 
+		color $gris
+		text-align center
+
+#contact
+	background $celeste
+
+
+.field-wrapper
+	margin 0
+	clear both
+	position relative
+	overflow visible
+
+	label
+		color #737373
+		font-weight 500
+		display block
+		-webkit-user-select none
+		-moz-user-select none
+		-ms-user-select none
+		user-select none
+		padding-bottom .2em
+		max-width 550px
+
+	input[type="text"],input[type="password"],input[type="email"],textarea,#uploadFile
+		width 100%
+		max-width 550px
+		position relative
+		margin 0 0 10px 0
+		min-height 26px
+		background-color #fff
+		border 2px solid #c8c8c8
+
+	input[disabled]
+		cursor not-allowed
+		background-color #eeeeee !important
+		
+	textarea
+		height 100px
+
+.button
+	font-size 13px
+	height 36px
+	line-height 36px
+	padding: 0 18px;
+	cursor: pointer;
+	overflow: hidden;
+	font-weight: 700;
+	//font-family: "Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: capitalize;
+	letter-spacing: .01em;
+	margin-right: 18px;
+	border: 0 none;
+	border-radius: 3px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #737373;
+	background-color: #e0e0e0;
+
+.p0
+	background #737373
+	color #FFF
+.p0:hover
+	background rgb(34, 34, 34)
+
+.fileUpload 
+	position relative
+	overflow hidden
+	margin 0px 5px
+
+	input 
+		position absolute
+		top 0
+		right 0
+		margin 0
+		padding 0
+		font-size 20px
+		cursor pointer
+		opacity 0
+#uploadFile
+	width 200px !important
+
+.btn 
+	display inline-block
+	padding 4px 12px
+	margin-bottom 0
+	font-size 14px
+	line-height 20px
+	text-align center
+	vertical-align middle
+	cursor pointer
+	color #333333
+	text-shadow 0 1px 1px rgba(255, 255, 255, 0.75)
+	background-color #f5f5f5
+	background-image linear-gradient(to bottom, #ffffff, #e6e6e6)
+	background-repeat repeat-x
+	border-color #e6e6e6 #e6e6e6 #bfbfbf
+	border-color rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)
+	border: 1px solid #cccccc
+	border-bottom-color #b3b3b3
+	border-radius (4px)
+	box-shadow inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)
+	
+/*.btn-primary
+	background $celeste*/
+
+
+
+
+
+
+
+
+
+@import "responsive.styl"
+
+
+
+    

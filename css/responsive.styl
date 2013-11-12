@@ -1,0 +1,81 @@
+@media only screen and (min-width:  900px) 
+	.mm-page
+		background inherit
+		margin 0px !important
+		left 30% !important 
+		top 0px !important
+		width 70% !important
+		position relative 
+		z-index 1
+		min-height 100%
+		box-shadow none !important
+		box-sizing (border-box)
+
+	.mm-menu 
+		padding 0px
+		width 30% !important 
+		position fixed
+		z-index 0
+
+	.mm-top.mm-menu 
+		left 0px !important
+		top 0px !important
+		right auto !important
+		bottom auto !important
+
+	.mm-right.mm-menu 
+		left 0px !important
+		top 0px !important 
+		right auto !important
+		bottom auto !important
+
+	.mm-bottom.mm-menu 
+		left 0px !important
+		top 0px !important 
+		right auto !important
+		bottom auto !important
+
+	:first-child.mm-menu
+		display block
+
+	.mm-current.mm-menu 
+		display block
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 899px)
+	.mm-page
+		background inherit
+		left 60px 
+		margin-right 60px
+		position relative 
+		min-height 100%
+
+	.mm-menu 
+		position fixed
+
+	html.mm-opened .mm-page 
+		left 60px
+
+	.mm-menu 
+		display block !important
+
+
+@media all and (min-width:500px)
+
+	#page
+		a#open-icon-header 
+			display none
+
+
+@media all and (max-width:499px)
+
+	#open-icon-menu 
+		display none
+
+
+@media all and (min-width:900px)
+
+	#open-icon-menu 
+		display: none
+

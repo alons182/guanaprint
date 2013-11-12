@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Guana Print</title>
+        <meta name="description" content="Guana Print - Impresión en Pequeño, Gran Formato, Diseño Gráfico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/jquery.mmenu.all.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        
+        <nav id="menu">
+            <ul>
+                <li id="open-icon-menu"><a href="#"><i class="icon icon-list"></i></a></li>
+                <li><a href="#home"><i class="icon icon-home"></i> Inicio</a> </li>
+                <li><a href="#about"><i class="icon icon-users"></i> Quienes somos</a></li>
+                <li><a href="#services"><i class="icon icon-stack"></i> Servicios</a></li>
+                <li><a href="#upload"><i class="icon icon-upload"></i> Upload</a></li>
+                <li><a href="#contact"><i class="icon icon-phone"></i> Contactenos</a></li>
+            </ul>
+        </nav>
+        <div id="page">
+            <a id="open-icon-header" href="#menu"><i class="icon-menu"></i></a>
+            <section id="home">
+                <div><h1 id="logo"><img src="img/logo.svg" alt="Guana print" /></h1><p>Impresión en Pequeño :: Gran Formato :: Diseño Gráfico</p></div>
+            </section>
+            <section id="about"><div><h1>Quienes somos</h1></div></section>
+            <section id="services"><div><h1>Servicios</h1></div></section>
+            <section id="upload">
+                <div>
+                    <h1>Archivo</h1><p>Envianos tus archivos para ganar tiempo. Tamaño maximo 200mb</p>
+                    <form id="uploadform" action="#" enctype="multipart/form-data">
+                       
+                        <div class="form-field">
+                            <div class="field-wrapper">
+                                <label for="nombre">Nombre completo</label>
+                                <input id="nombre" name="nombre" type="text" required />
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="field-wrapper">
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email" required />
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="field-wrapper">
+                                 <label for="email">Archivo</label>
+                                <p style="display:inline;"><input id="uploadFile" placeholder="Choose File" disabled="disabled" /></p>
+                                <div class="fileUpload btn btn-primary">
+                                            
+                                    <span>Upload</span>
+                                    <input id="uploadBtn" name="uploadBtn" type="file" class="upload"  required />
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <div class="field-wrapper">
+                                <label for="descripcion">Descripcion</label>
+                                <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                         </div>
+                        </div>
+                        <button type="submit" value="Enviar" class="button p0">Enviar</button>
+                    </form>
+                    <div class="progress"><div class="bar"></div><div class="percent">0%</div></div>
+                    <p class="mensaje"></p>
+                </div>
+            </section>
+            <section id="contact"><div><h1>contactenos</h1></div></section>
+        </div>
+        
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>
+        <script src="js/vendor/jquery.mmenu.min.all.js"></script>
+        <script src="js/vendor/jquery.validate.min.js"></script>
+        <script src="js/vendor/jquery.form.min.js"></script> 
+        <script src="js/utils.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+           /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));*/
+        </script>
+        
+    </body>
+
+  
+      
+  
+      
+   
+       
+   
+       
+
+   
+       
+    
+        
+</html>
+
+
