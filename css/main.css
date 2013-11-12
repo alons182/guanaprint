@@ -22,12 +22,12 @@ p{margin:0 0 10px}
 section{height:575px}
 section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #home{background:#fff}
-#about{background:#f00}
+#about{background:#ec038a}
 #services{background:#fff100}
 #upload{background:#a6a8ab}
 #upload > div{padding:20px 20px 0;}
 #upload > div .progress{position:relative;width:400px;border:1px solid #ddd;padding:1px;-webkit-border-radius:3px;border-radius:3px;top:-36px;left:88px;}
-#upload > div .progress .bar{background-color:#f00;width:0%;height:20px;-webkit-border-radius:3px;border-radius:3px}
+#upload > div .progress .bar{background-color:#ec038a;width:0%;height:20px;-webkit-border-radius:3px;border-radius:3px}
 #upload > div .progress .percent{position:absolute;display:inline-block;top:3px;left:48%;font-size:12px}
 #home > div{padding:150px 20px 0;}
 #home > div #logo img{width:100%}
