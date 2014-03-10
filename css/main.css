@@ -123,11 +123,13 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 .mm-menu{position:fixed}
 html.mm-opened .mm-page{left:60px}
 .mm-menu{display:block !important}
-#services > div #pf figure{max-width:40%}
-#services > div #gf figure{max-width:35%}
+#services > div #pf figure{top:120px;max-width:35%}
+#services > div #gf figure{max-width:35%;right:0;left:inherit;bottom:75px}
 }@media all and (min-width:500px){#page a#open-icon-header{display:none}
 }@media all and (max-width:499px){#open-icon-menu{display:none}
 #services > div figure{display:none}
 #services > div .service{float:none !important}
+#services > div #dg h2{font-size:1em;}
+#services > div #dg h2 span{font-size:.9em}
 }@media all and (min-width:900px){#open-icon-menu{display:none}
 }
