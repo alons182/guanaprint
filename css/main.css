@@ -88,8 +88,8 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #upload > div .progress .bar{background-color:#ec038a;width:0%;height:20px;-webkit-border-radius:3px;border-radius:3px}
 #upload > div .progress .percent{position:absolute;display:inline-block;top:3px;left:48%;font-size:12px}
 #contact{background:#00adee;}
-#contact .map{max-width:99.6% !important;margin:0;padding:0}
-#contact iframe{width:100%}
+#contact .map{max-width:99.5% !important;margin:0;padding:0}
+#contact iframe{width:100%;height:415px}
 #contact > div{padding:20px 20px 0}
 #home > div{padding:150px 20px 0;}
 #home > div #logo img{width:100%}
@@ -127,9 +127,11 @@ html.mm-opened .mm-page{left:60px}
 #services > div #gf figure{max-width:35%;right:0;left:inherit;bottom:75px}
 }@media all and (min-width:500px){#page a#open-icon-header{display:none}
 }@media all and (max-width:499px){#open-icon-menu{display:none}
+section h1{font-size:2.8em}
 #services > div figure{display:none}
 #services > div .service{float:none !important}
 #services > div #dg h2{font-size:1em;}
 #services > div #dg h2 span{font-size:.9em}
+#contact .map{max-width:99.1% !important}
 }@media all and (min-width:900px){#open-icon-menu{display:none}
 }
