@@ -73,7 +73,8 @@ figure img{width:100%}
 #menu .icon{margin:0 20px 0 3px;opacity:.6;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:alpha(opacity=60)}
 #page{-webkit-box-shadow:none !important;box-shadow:none !important;}
 #page nav{display:none}
-#page a#open-icon-header{left:0;top:0;width:60px;height:60px;display:block;position:absolute;font-size:1.5em;color:#fff;text-decoration:none;padding:.8em}
+#page a#open-icon-header{left:0;top:0;width:60px;height:60px;display:block;position:absolute;font-size:1em;color:#00adee;text-decoration:none;padding:.8em;z-index:10;}
+#page a#open-icon-header .icon-menu{font-size:1.5em;vertical-align:top}
 section{height:575px;position:relative;}
 section h1{text-transform:uppercase;text-shadow:1px 2px 5px rgba(0,0,0,0.5)}
 section h2{background:#fff;color:#ec038a;font-weight:300;padding:.5em;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:1px 2px 5px rgba(0,0,0,0.5);box-shadow:1px 2px 5px rgba(0,0,0,0.5);}
