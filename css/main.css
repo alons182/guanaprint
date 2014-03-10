@@ -87,6 +87,10 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #upload > div .progress{position:relative;width:400px;border:1px solid #ddd;padding:1px;-webkit-border-radius:3px;border-radius:3px;top:-36px;left:88px;display:none;}
 #upload > div .progress .bar{background-color:#ec038a;width:0%;height:20px;-webkit-border-radius:3px;border-radius:3px}
 #upload > div .progress .percent{position:absolute;display:inline-block;top:3px;left:48%;font-size:12px}
+#contact{background:#00adee;}
+#contact .map{max-width:99.6% !important;margin:0;padding:0}
+#contact iframe{width:100%}
+#contact > div{padding:20px 20px 0}
 #home > div{padding:150px 20px 0;}
 #home > div #logo img{width:100%}
 #home > div p{color:#a6a8ab;text-align:center}
@@ -96,7 +100,6 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #services > div #gf{float:right;margin-right:115px;}
 #services > div #gf figure{max-width:30%;position:absolute;left:0;bottom:0}
 #services > div #dg{position:absolute;right:0;bottom:0}
-#contact{background:#00adee}
 .field-wrapper{margin:0;clear:both;position:relative;overflow:visible;}
 .field-wrapper label{color:#737373;font-weight:500;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding-bottom:.2em;max-width:550px}
 .field-wrapper input[type="text"],.field-wrapper input[type="password"],.field-wrapper input[type="email"],.field-wrapper textarea,.field-wrapper #uploadFile{width:100%;max-width:550px;position:relative;margin:0 0 10px 0;min-height:26px;background-color:#fff;border:2px solid #c8c8c8}
