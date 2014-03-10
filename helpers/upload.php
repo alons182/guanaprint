@@ -6,7 +6,7 @@
 	
        
    if ($_FILES['uploadBtn']['size'] <= 209715200) { 
-
+   	
     	if (move_uploaded_file($_FILES['uploadBtn']['tmp_name'], $uploadfile)) {
 	   		$data = array('message' => 'File is valid, and was successfully uploaded.');
 	   
