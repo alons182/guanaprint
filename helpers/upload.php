@@ -27,13 +27,22 @@
 				$comments = trim($_POST['descripcion']);
 			}
 
-			$link = '<a href="#" title="Imagen">link</a>';
+			$link = '<a href="'.basename($_FILES['uploadBtn']['name'].'" title="Imagen">link</a>';
 
 			if($result=='ok'){
 				$emailTo = 'alonso@avotz.com';
 			    $subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
-			    $body = "Nombre: $name \n\nEmail: $email \n\nDescripcion: $comments \n\nLink del Archivo: $link";
-			    $headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email . "\r\n" . "MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=ISO-8859-1\r\n";
+			    
+			    $body = '<html><body>';
+				$body .= '<img src="http://css-tricks.com/examples/WebsiteChangeRequestForm/images/wcrf-header.png" alt="Website Change Request" />';
+				$body .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
+				$body .= "<tr style='background: #eee;'><td><strong>Nombre:</strong> </td><td>" . strip_tags($name) . "</td></tr>";
+				$body .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($email) . "</td></tr>";
+				$body .= "<tr><td><strong>Descripción:</strong> </td><td>" . strip_tags($comments) . "</td></tr>";
+				$body .= "<tr><td><strong>URL del Archivo:</strong> </td><td>" . strip_tags($link) . "</td></tr>";
+				$body .= "</table>";
+				$body .= "</body></html>";
+			    $headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email . "\r\nCC:".$email."\r\n". "MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 
 			    mail($emailTo, $subject, $body, $headers);
