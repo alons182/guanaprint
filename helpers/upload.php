@@ -33,7 +33,8 @@
 				$emailTo = 'alonso@avotz.com';
 			    $subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
 			    $body = "Nombre: $name \n\nEmail: $email \n\nDescripcion: $comments \n\nLink del Archivo: $link";
-			    $headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+			    $headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email . "\r\n" . "MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=ISO-8859-1\r\n";
+
 
 			    mail($emailTo, $subject, $body, $headers);
 			        
