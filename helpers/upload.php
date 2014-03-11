@@ -36,7 +36,7 @@
 			    $subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
 			    
 			    $body = '<html><body>';
-				$body .= '<img src="http://css-tricks.com/examples/WebsiteChangeRequestForm/images/wcrf-header.png" alt="Website Change Request" />';
+				$body .= '<img src="http://sandbox.avotz.com/guanaprint/img/logo_mail.png" alt="Guanaprint" />';
 				$body .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
 				$body .= "<tr style='background: #eee;'><td><strong>Nombre:</strong> </td><td>" . strip_tags($name) . "</td></tr>";
 				$body .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($email) . "</td></tr>";
