@@ -3,7 +3,7 @@
 
 	$uploaddir = '../uploads/';
 	$uploadfile = $uploaddir . basename($_FILES['uploadBtn']['name']);
-	
+	//'. $_SERVER['REQUEST_URI'] .'/uploads/'.basename($_FILES['uploadBtn']['name'].
        
    if ($_FILES['uploadBtn']['size'] <= 209715200) { 
    	
@@ -27,7 +27,7 @@
 				$comments = trim($_POST['descripcion']);
 			}
 
-			$link = '<a href="'. $_SERVER['REQUEST_URI'] .'/uploads/'.basename($_FILES['uploadBtn']['name'].'" title="Imagen">link</a>';
+			$link = '<a href="#" title="Imagen">link</a>';
 
 			if($result=='ok'){
 				$emailTo = 'alonso@avotz.com';
