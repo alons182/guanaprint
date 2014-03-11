@@ -27,7 +27,7 @@
 				$comments = trim($_POST['descripcion']);
 			}
 
- 			$link = '<a href="http://'. $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"].'/uploads/'.$_FILES['uploadBtn']['name'].'" title="Imagen">link</a>';
+ 			$link = '<a href="'. $_SERVER['HTTP_HOST'] .'/uploads/'.$_FILES['uploadBtn']['name'].'" title="Imagen">Archivo</a>';
 
 	
 
