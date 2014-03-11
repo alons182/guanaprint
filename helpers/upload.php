@@ -27,7 +27,7 @@
 				$comments = trim($_POST['descripcion']);
 			}
 
- 			$link = '<a href="'.$_SERVER["SERVER_NAME"] .'/guanaprint/uploads/'.$_FILES['uploadBtn']['name'].'" title="Imagen">Archivo</a>';
+ 			$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$_FILES['uploadBtn']['name'].'" title="Imagen">Archivo</a>';
 
 	
 
