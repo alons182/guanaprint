@@ -122,18 +122,18 @@ $(function() {
 
 				    setTimeout(function(){  
 							        $('.mensaje').fadeOut(200,function() {
-
+							        	progress.hide();
 									    $('.mensaje span').remove();
 									    $('.mensaje').show();
 									    
-									  });}, 2000);  	 
+									  });}, 3000);  	 
 			    },
 		        error: function(data) {
 			        var percentVal = '0%';
 			        bar.width(percentVal)
 			        percent.html(percentVal);
 
-			         $('.mensaje').html('<span class="ok">Error subiendo el archivo</span>');	
+			         $('.mensaje').html('<span class="error">Error al subir el archivo. Verifique que no sobrepase el limite de 64mb</span>');	
 
 		    		setTimeout(function(){  
 					        $('.mensaje').fadeOut(200,function() {
@@ -141,7 +141,7 @@ $(function() {
 							    $('.mensaje span').remove();
 							    $('.mensaje').show();
 							    
-							  });}, 2000);  	 
+							  });}, 3000);  	 
 			    },
 		        
 		        url:       url,        // override for form's 'action' attribute 
