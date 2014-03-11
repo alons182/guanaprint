@@ -68,8 +68,8 @@ figure img{width:100%}
 .right{float:right}
 #menu{background:#222;font-size:16px;}
 #menu li::after{margin-left:60px}
-#menu li a{line-height:40px}
-#menu li a:hover{background-color:rgba(0,0,0,0.2)}
+#menu li a{line-height:40px;font-family:'Lato',sans-serif;text-transform:uppercase}
+#menu li a:hover{background-color:rgba(0,0,0,0.2);color:#00adee}
 #menu .icon{margin:0 20px 0 3px;opacity:.6;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:alpha(opacity=60)}
 #page{-webkit-box-shadow:none !important;box-shadow:none !important;}
 #page nav{display:none}
