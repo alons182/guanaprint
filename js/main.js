@@ -64,6 +64,24 @@ $(function() {
 
 	$("#uploadform").validate({
 
+	 	messages:
+	 	{
+	 		nombre:{
+	 			required:'Nombre requerido'
+	 		},
+	 		email:{
+	 			required:'Email requerido',
+	 			invalid:'Email valido'
+	 		},
+	 		uploadBtn:{
+	 			required:'*'
+	 		},
+	 		descripcion:{
+	 			required:'Comentario requerido'
+	 		}
+	 		
+	 		
+	 	},
 	 	rules: {
 	 		
 		    descripcion:{

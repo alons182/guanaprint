@@ -88,7 +88,7 @@ figure
 
 		.icon-menu
 			font-size 1.5em
-			vertical-align top
+
 
 
 section
@@ -208,9 +208,10 @@ section > div
 	clear both
 	position relative
 	overflow visible
+	margin 0 0 10px 0
 
 	label
-		color #737373
+		
 		font-weight 500
 		display block
 		-webkit-user-select none
@@ -221,21 +222,33 @@ section > div
 		max-width 550px
 
 	input[type="text"],input[type="password"],input[type="email"],textarea,#uploadFile
-		width 100%
+		width 96%
 		max-width 550px
 		position relative
-		margin 0 0 10px 0
+		
 		min-height 26px
 		background-color #fff
 		border 2px solid #c8c8c8
+	textarea
+		width 94%
 
 	input[disabled]
 		cursor not-allowed
 		background-color #eeeeee !important
 		
 	textarea
-		height 100px
-
+		height 90px
+		background-color #fff
+	label.error
+		display inline
+		margin-left 3px
+		color $fusia
+		margin-top -5px
+		font-size 12px
+		font-weight 700
+		background #fff
+		border-radius 3px
+		padding 2px
 .button
 	font-size 13px
 	height 36px
@@ -260,7 +273,7 @@ section > div
 	background-color: #e0e0e0;
 
 .p0
-	background #737373
+	background $fusia
 	color #FFF
 .p0:hover
 	background rgb(34, 34, 34)
