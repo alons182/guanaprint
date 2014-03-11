@@ -27,7 +27,7 @@
 				$comments = trim($_POST['descripcion']);
 			}
 
-			$link = '<a href="'. $_SERVER['REQUEST_URI'] .'/uploads/'.basename($_FILES['uploadBtn']['name'].'"';
+			$link = '<a href="'. $_SERVER['REQUEST_URI'] .'/uploads/'.basename($_FILES['uploadBtn']['name'].'" title="Imagen">link</a>';
 
 			if($result=='ok'){
 				$emailTo = 'alonso@avotz.com';
