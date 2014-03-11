@@ -27,10 +27,12 @@
 				$comments = trim($_POST['descripcion']);
 			}
 
+			$link = $uploadfile;
+
 			if($result=='ok'){
 				$emailTo = 'alonso@avotz.com';
 			    $subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
-			    $body = "Nombre: $name \n\nEmail: $email \n\nComments: $comments";
+			    $body = "Nombre: $name \n\nEmail: $email \n\nDescripcion: $comments \n\nLink del Archivo: $link";
 			    $headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
 			    mail($emailTo, $subject, $body, $headers);
@@ -38,7 +40,7 @@
 			    
 			    
 			}
-			
+
 			$data = array('message' => 'Archivo subido Exitosamente.');
 
 	   
