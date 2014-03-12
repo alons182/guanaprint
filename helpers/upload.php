@@ -24,7 +24,7 @@
 	}
 	$nombre_final = basename('archivo_'.substr(sha1(rand(1,999999)),0,-30).'_'.substr($name,0,3).'_'.date("Ymd").'.'.$extension);
 
-	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$nombre_final.'" title="Imagen">Archivo</a>';
+	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$nombre_final.'" title="Imagen">'.$nombre_final.'</a>';
 	
 	$uploadfile = $uploaddir . $nombre_final;
        
