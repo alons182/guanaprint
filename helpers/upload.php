@@ -22,7 +22,7 @@
 	}else{
 		$comments = trim($_POST['descripcion']);
 	}
-	$nombre_final = basename('archivo_'.substr(sha1(rand(1,999999)),0,-30).substr($name,0,3).date("Ymd").'.'.$extension;
+	$nombre_final = basename('archivo_'.substr(sha1(rand(1,999999)),0,-30).substr($name,0,3).date("Ymd").'.'.$extension);
 
 	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$nombre_final.'" title="Imagen">Archivo</a>';
 	
