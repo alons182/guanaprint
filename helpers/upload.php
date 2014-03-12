@@ -26,7 +26,7 @@
 
 	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$nombre_final.'" title="Imagen">Archivo</a>';
 	
-	$uploadfile = $uploaddir . $nombre_final);
+	$uploadfile = $uploaddir . $nombre_final;
        
    if ($_FILES['uploadBtn']['size'] <= 209715200) { 
    	
