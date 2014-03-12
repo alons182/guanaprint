@@ -2,33 +2,37 @@
 	$data =  $_POST;
 
 	$uploaddir = '../uploads/';
-	$uploadfile = $uploaddir . basename($_FILES['uploadBtn']['name']);
+	$nombre = $_FILES["file"]["name"];
+    $extension = pathinfo($nombre, PATHINFO_EXTENSION);
+	
 	//'. $_SERVER['REQUEST_URI'] .'/uploads/'.basename($_FILES['uploadBtn']['name'].
+	$result = 'ok';
+	if(trim($_POST['nombre']) === '') {
+		$result = 'Error - falta el campo nombre';
+	}else{
+		$name = trim($_POST['nombre']);
+	}
+	if(trim($_POST['email']) === '') {
+		$result = 'Error - falta el campo email';
+	}else{
+		$email = trim($_POST['email']);
+	}
+	if(trim($_POST['descripcion']) === '') {
+		$result = 'Error - falta el campo comentarios';
+	}else{
+		$comments = trim($_POST['descripcion']);
+	}
+
+	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$_FILES['uploadBtn']['name'].'" title="Imagen">Archivo</a>';
+	
+	$uploadfile = $uploaddir . basename('archivo_'substr(sha1(rand(1,999999)),0,-30).substr($name,0,3).date("Ymd").'.'.$extension);
        
    if ($_FILES['uploadBtn']['size'] <= 209715200) { 
    	
     	if (move_uploaded_file($_FILES['uploadBtn']['tmp_name'], $uploadfile)) {
 	   		
 
-	   		$result = 'ok';
-			if(trim($_POST['nombre']) === '') {
-				$result = 'Error - falta el campo nombre';
-			}else{
-				$name = trim($_POST['nombre']);
-			}
-			if(trim($_POST['email']) === '') {
-				$result = 'Error - falta el campo email';
-			}else{
-				$email = trim($_POST['email']);
-			}
-			if(trim($_POST['descripcion']) === '') {
-				$result = 'Error - falta el campo comentarios';
-			}else{
-				$comments = trim($_POST['descripcion']);
-			}
-
- 			$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$_FILES['uploadBtn']['name'].'" title="Imagen">Archivo</a>';
-
+	   		
 	
 
 			if($result=='ok'){
