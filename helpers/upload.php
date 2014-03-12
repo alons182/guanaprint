@@ -2,7 +2,7 @@
 	$data =  $_POST;
 
 	$uploaddir = '../uploads/';
-	$nombre = $_FILES["file"]["name"];
+	$nombre = $_FILES["uploadBtn"]["name"];
     $extension = pathinfo($nombre, PATHINFO_EXTENSION);
 	
 	//'. $_SERVER['REQUEST_URI'] .'/uploads/'.basename($_FILES['uploadBtn']['name'].
@@ -23,7 +23,7 @@
 		$comments = trim($_POST['descripcion']);
 	}
 
-	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$_FILES['uploadBtn']['name'].'" title="Imagen">Archivo</a>';
+	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.basename('archivo_'.substr(sha1(rand(1,999999)),0,-30).substr($name,0,3).date("Ymd").'.'.$extension.'" title="Imagen">Archivo</a>';
 	
 	$uploadfile = $uploaddir . basename('archivo_'.substr(sha1(rand(1,999999)),0,-30).substr($name,0,3).date("Ymd").'.'.$extension);
        
