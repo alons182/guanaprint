@@ -74,6 +74,7 @@ figure img{width:100%}
 #menu #logo a{padding-top:50px;}
 #menu #logo a img,#menu #logo a svg{width:100%}
 #menu #logo p{display:none}
+#menu #logo #logo_ani{height:200px}
 #menu .icon{margin:0 20px 0 3px;opacity:.6;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";filter:alpha(opacity=60)}
 #page{-webkit-box-shadow:none !important;box-shadow:none !important;}
 #page nav{display:none}

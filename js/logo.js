@@ -2,9 +2,13 @@ $(function() {
 	
 
 	 var contenedor = document.getElementById('logo_ani');
-       
+       var w = 557.739;
+		var h = 214.044;
         
-       var rsr = Raphael(contenedor, '557.739', '214.044');
+       var rsr = Raphael(contenedor);//, '557.739', '214.044');
+
+        rsr.setViewBox(0,0,w,h,true);
+		rsr.setSize('100%', '100%');
 
         var group_a = rsr.set();
         var path_g = rsr.path("M17.572,115.825c-7.127-34.688,8.881-70.358,39.585-88.015l6.239,16.443   c-22.165,13.74-33.66,39.619-29.342,65.316L17.572,115.825z").attr({fill: '#EC038A',parent: 'group_a','stroke-width': '0','stroke-opacity': '1'}).data('id', 'path_g');
@@ -158,7 +162,7 @@ $(function() {
 
 			group_f.attr( 'opacity', 0);
 
-			group_d.transform("t100,100");
+			group_d.transform("t300,100");
 
 			path_g.animate({ "opacity": "1" }, 200,"ease",function(){
               		 path_h.animate({ "opacity": "1" }, 200,"ease",function(){
