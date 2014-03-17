@@ -112,15 +112,43 @@ $(function() {
             }
        //group_a.hover(hoverIn, hoverOut, group_a, group_a)
        
+       var l_coord = group_a.getBBox().x,
+		    r_coord = group_a.getBBox().x2,
+		    t_coord = group_a.getBBox().y,
+		    b_coord = group_a.getBBox().y2;
+
+		var cx = (l_coord + r_coord)/2,
+		    cy = (t_coord + b_coord)/2;
+
+		    var angle = 0;
+
+		/* setInterval(function () {
+				   angle += 90;
+				  
+				},
+				10);
+*/
         $('#logo').hover(
             function () {
-              group_a.animate({transform: "r90"}, 600,"elastic"); 
+             	
+              angle = 1080;
+              group_a.animate({transform: "r"+angle+","+cx+","+cy}, 600,"ease"); 
+            },
+            function () {
+               group_a.animate({transform: "r0,"+cx+","+cy}, 600,"ease"); 
+            }
+        );
+       /* $('#logo').hover(
+            function () {
+             	
+              angle = 90;
+              group_a.animate({transform: "r"+angle}, 600,"elastic"); 
             },
             function () {
                group_a.animate({transform: "r0"}, 600,"elastic"); 
             }
         );
-  
+  */
 
 
 
