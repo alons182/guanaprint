@@ -128,7 +128,7 @@ $(function() {
 				},
 				10);
 */
-        $('#logo').hover(
+       /* $('#logo').hover(
             function () {
              	
               angle = 1080;
@@ -137,8 +137,8 @@ $(function() {
             function () {
                group_a.animate({transform: "r0,"+cx+","+cy}, 600,"ease"); 
             }
-        );
-       /* $('#logo').hover(
+        );*/
+        $('#logo').hover(
             function () {
              	
               angle = 90;
@@ -148,7 +148,7 @@ $(function() {
                group_a.animate({transform: "r0"}, 600,"elastic"); 
             }
         );
-  */
+  
 
 
 
