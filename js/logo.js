@@ -172,7 +172,9 @@ $(function() {
 														              		 path_ag.animate({ transform: "s1, 1"}, 150,"bounce",function(){
 															              		 path_ah.animate({ transform: "s1, 1"}, 150,"bounce",function(){
 																	              		 group_f.animate({ "opacity": "1"}, 200,"ease",function(){
-																		              		 group_d.animate({ transform: "t0,0"}, 200,"ease"); 
+																		              		 group_d.animate({ transform: "t0,0"}, 200,"ease",function(){
+																			              		 $('#logo').find('p').show(300); 
+																			              	 });
 																		              	 }); 
 																	              	 }); 
 															              	 }); 
