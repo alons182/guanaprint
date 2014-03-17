@@ -71,7 +71,7 @@ figure img{width:100%}
 #menu li a{line-height:40px;font-family:'Lato',sans-serif;text-transform:uppercase}
 #menu li a:hover{background-color:rgba(0,0,0,0.2);color:#00adee}
 #menu #logo{text-align:center;}
-#menu #logo a{padding-top:50px;}
+#menu #logo a{padding-top:10px;}
 #menu #logo a img,#menu #logo a svg{width:100%}
 #menu #logo p{display:none}
 #menu #logo #logo_ani{height:200px}
