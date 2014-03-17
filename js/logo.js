@@ -114,10 +114,10 @@ $(function() {
        
         $('#logo').hover(
             function () {
-              group_a.animate({transform: "r90"}, 400,"bounce"); 
+              group_a.animate({transform: "r90"}, 600,"elastic"); 
             },
             function () {
-               group_a.animate({transform: "r0"}, 400,"bounce"); 
+               group_a.animate({transform: "r0"}, 600,"elastic"); 
             }
         );
   
