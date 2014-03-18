@@ -92,12 +92,12 @@ $(function() {
 
 		  submitHandler: function(form) {
 		  	
-		 	var url = "/guanaprint/helpers/upload.php";
-			
-			var progress = $('.progress');
- 			var bar = $('.bar');
-			var percent = $('.percent');
-			var status = $('#status');
+		 	var url = "/guanaprint/helpers/upload.php",
+				progress = $('.progress'),
+				bar = $('.bar'),
+				percent = $('.percent'),
+				status = $('#status'),
+				mensaje = $('.mensaje');
 		   
 		    $('#uploadform').ajaxSubmit({
 
@@ -118,13 +118,18 @@ $(function() {
 			        bar.width(percentVal)
 			        percent.html(percentVal);
 
-			         $('.mensaje').html('<span class="ok">'+ data.message +'</span>');	
+			        // mensaje.html('<span class="ok">'+ data.message +'</span>');	
+			        $('<span></span>',{
+			        	text: data.message,
+			        	class: 'ok'
+			        }).appendTo(mensaje);	
+			        
 
 				    setTimeout(function(){  
-							        $('.mensaje').fadeOut(200,function() {
+							        mensaje.fadeOut(200,function() {
 							        	progress.hide();
-									    $('.mensaje span').remove();
-									    $('.mensaje').show();
+									    mensaje.find('span').remove();
+									    mensaje.show();
 									    
 									  });}, 3000);  	 
 			    },
@@ -133,13 +138,19 @@ $(function() {
 			        bar.width(percentVal)
 			        percent.html(percentVal);
 
-			         $('.mensaje').html('<span class="error">Error al subir el archivo. Verifique que no sobrepase el limite de 64mb</span>');	
+			        $('<span></span>',{
+			        	text: 'Error al subir el archivo. Verifique que no sobrepase el limite de 64mb',
+			        	class: 'error'
+			        }).appendTo(mensaje);	
+
+			      
+			        //mensaje.html('<span class="error">Error al subir el archivo. Verifique que no sobrepase el limite de 64mb</span>');	
 
 		    		setTimeout(function(){  
-					        $('.mensaje').fadeOut(200,function() {
+					        mensaje.fadeOut(200,function() {
 
-							    $('.mensaje span').remove();
-							    $('.mensaje').show();
+							    mensaje.find('span').remove();
+							    mensaje.show();
 							    
 							  });}, 3000);  	 
 			    },
