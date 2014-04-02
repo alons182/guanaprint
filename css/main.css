@@ -151,14 +151,14 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 html.mm-opened .mm-page{left:60px}
 .mm-menu{display:block !important}
 #services > div #pf figure{top:120px;max-width:35%}
-#services > div #gf figure{max-width:35%;right:0;left:inherit;bottom:75px}
+#services > div #gf figure{max-width:35%;right:20px;left:inherit;bottom:75px}
 #menu #logo{display:none}
 #home .cycle-slideshow{top:51px;max-width:500px;}
 #home .cycle-slideshow .home-service{width:500px;}
 #home .cycle-slideshow .home-service h2{top:350px !important}
 }@media all and (min-width:500px){#page a#open-icon-header{display:none}
 }@media all and (max-width:499px){#open-icon-menu{display:none}
-section h1{font-size:2.8em}
+section h1{font-size:2.5em}
 section h2{font-size:1em}
 #services > div figure{display:none}
 #services > div .service{float:none !important}
