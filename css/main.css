@@ -94,7 +94,7 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #upload > div .progress .bar{background-color:#00adee;width:0%;height:20px;-webkit-border-radius:3px;border-radius:3px}
 #upload > div .progress .percent{position:absolute;display:inline-block;top:3px;left:48%;font-size:12px}
 #contact{background:#00adee;}
-#contact .map{max-width:99.5% !important;margin:0;padding:0}
+#contact .map{max-width:99.3% !important;margin:0;padding:0}
 #contact iframe{width:100%;height:415px}
 #contact > div{padding:20px 20px 0}
 #home .logo-mobile{width:90%;padding-top:70px;display:none;text-decoration:none;color:#a6a8ab;text-align:center;margin:0 auto;}
