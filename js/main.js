@@ -44,12 +44,12 @@ require.config({
     }
 });
 
-require(['jquery','mmenu','raphael','./logo','cycle2','form','./formvalidation'], function ($) {
+require(['jquery','mmenu','./logo','cycle2','form','./formvalidation'], function ($) {
 	  
 	
 	var $menu = $('#menu');
 
-	//	Toggle menu 
+	//	Toggle menu
 	$('#open-icon-menu a').click(function( e ) {
 		e.stopImmediatePropagation();
 		e.preventDefault();

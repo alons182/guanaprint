@@ -1,14 +1,21 @@
-$(function() {
-	
 
-	 var contenedor = document.getElementById('logo_ani');
+define(function (require) {
+
+
+"use strict";
+
+    var $                   = require('jquery'),
+        Raphael            = require('raphael');
+       
+
+     var contenedor = document.getElementById('logo_ani');
        var w = 557.739;
-		var h = 214.044;
+        var h = 214.044;
         
        var rsr = Raphael(contenedor);//, '557.739', '214.044');
 
         rsr.setViewBox(0,0,w,h,true);
-		rsr.setSize('100%', '100%');
+        rsr.setSize('100%', '100%');
 
         var group_a = rsr.set();
         var path_g = rsr.path("M17.572,115.825c-7.127-34.688,8.881-70.358,39.585-88.015l6.239,16.443   c-22.165,13.74-33.66,39.619-29.342,65.316L17.572,115.825z").attr({fill: '#EC038A',parent: 'group_a','stroke-width': '0','stroke-opacity': '1'}).data('id', 'path_g');
@@ -119,24 +126,24 @@ $(function() {
       
 
        var l_coord = group_a.getBBox().x,
-		    r_coord = group_a.getBBox().x2,
-		    t_coord = group_a.getBBox().y,
-		    b_coord = group_a.getBBox().y2;
+            r_coord = group_a.getBBox().x2,
+            t_coord = group_a.getBBox().y,
+            b_coord = group_a.getBBox().y2;
 
-		var cx = (l_coord + r_coord)/2,
-		    cy = (t_coord + b_coord)/2;
+        var cx = (l_coord + r_coord)/2,
+            cy = (t_coord + b_coord)/2;
 
-		var angle = 0;
+        var angle = 0;
 
-		/* setInterval(function () {
-				   angle += 90;
-				  
-				},
-				10);
+        /* setInterval(function () {
+                   angle += 90;
+                  
+                },
+                10);
 */
        /* $('#logo').hover(
             function () {
-             	
+                
               angle = 1080;
               group_a.animate({transform: "r"+angle+","+cx+","+cy}, 600,"ease"); 
             },
@@ -144,52 +151,52 @@ $(function() {
                group_a.animate({transform: "r0,"+cx+","+cy}, 600,"ease"); 
             }
         );*/
-			group_b.attr( 'opacity', 0);
+            group_b.attr( 'opacity', 0);
 
-			path_g.attr( 'opacity', 0);
-			path_h.attr( 'opacity', 0);
-			path_i.attr( 'opacity', 0);
-			path_j.attr( 'opacity', 0);
-			path_k.attr( 'opacity', 0);
-			path_k.scale( 0.5,0.5);
+            path_g.attr( 'opacity', 0);
+            path_h.attr( 'opacity', 0);
+            path_i.attr( 'opacity', 0);
+            path_j.attr( 'opacity', 0);
+            path_k.attr( 'opacity', 0);
+            path_k.scale( 0.5,0.5);
 
-			//path_ad.attr( 'opacity', 0);
-			path_ad.scale( 0,0);
-			path_ae.scale( 0,0);
-			path_af.scale( 0,0);
-			path_ag.scale( 0,0);
-			path_ah.scale( 0,0);
+            //path_ad.attr( 'opacity', 0);
+            path_ad.scale( 0,0);
+            path_ae.scale( 0,0);
+            path_af.scale( 0,0);
+            path_ag.scale( 0,0);
+            path_ah.scale( 0,0);
 
-			group_f.attr( 'opacity', 0);
+            group_f.attr( 'opacity', 0);
 
-			group_d.transform("t300,100");
+            group_d.transform("t300,100");
 
-			path_g.animate({ "opacity": "1" }, 200,"ease",function(){
-              		 path_h.animate({ "opacity": "1" }, 200,"ease",function(){
-		              		 path_i.animate({ "opacity": "1" }, 200,"ease",function(){
-				              		 path_j.animate({ "opacity": "1" }, 200,"ease",function(){
-						              		 path_k.animate({ "opacity": "1" ,transform: "s1, 1"}, 300,"bounce",function(){
-								              		 group_b.animate({ "opacity": "1"}, 100,"ease",function(){
-										              		 path_ad.animate({ transform: "s1, 1"}, 150,"bounce",function(){
-											              		 path_ae.animate({ transform: "s1, 1"}, 150,"bounce",function(){
-													              		 path_af.animate({ transform: "s1, 1"}, 150,"bounce",function(){
-														              		 path_ag.animate({ transform: "s1, 1"}, 150,"bounce",function(){
-															              		 path_ah.animate({ transform: "s1, 1"}, 150,"bounce",function(){
-																	              		 group_f.animate({ "opacity": "1"}, 200,"ease",function(){
-																		              		 group_d.animate({ transform: "t0,0"}, 200,"ease",function(){
-																			              		 $('#logo').find('p').show(300); 
-																			              	 });
-																		              	 }); 
-																	              	 }); 
-															              	 }); 
-														              	 }); 
-													              	 }); 
-											              	 }); 
-										              }); 
-								              }); 
-						              }); 
-				              }); 
-		              }); 
+            path_g.animate({ "opacity": "1" }, 200,"ease",function(){
+                     path_h.animate({ "opacity": "1" }, 200,"ease",function(){
+                             path_i.animate({ "opacity": "1" }, 200,"ease",function(){
+                                     path_j.animate({ "opacity": "1" }, 200,"ease",function(){
+                                             path_k.animate({ "opacity": "1" ,transform: "s1, 1"}, 300,"bounce",function(){
+                                                     group_b.animate({ "opacity": "1"}, 100,"ease",function(){
+                                                             path_ad.animate({ transform: "s1, 1"}, 150,"bounce",function(){
+                                                                 path_ae.animate({ transform: "s1, 1"}, 150,"bounce",function(){
+                                                                         path_af.animate({ transform: "s1, 1"}, 150,"bounce",function(){
+                                                                             path_ag.animate({ transform: "s1, 1"}, 150,"bounce",function(){
+                                                                                 path_ah.animate({ transform: "s1, 1"}, 150,"bounce",function(){
+                                                                                         group_f.animate({ "opacity": "1"}, 200,"ease",function(){
+                                                                                             group_d.animate({ transform: "t0,0"}, 200,"ease",function(){
+                                                                                                 $('#logo').find('p').show(300); 
+                                                                                             });
+                                                                                         }); 
+                                                                                     }); 
+                                                                             }); 
+                                                                         }); 
+                                                                     }); 
+                                                             }); 
+                                                      }); 
+                                              }); 
+                                      }); 
+                              }); 
+                      }); 
               }); 
              
 
@@ -200,7 +207,7 @@ $(function() {
              
             },
             function () {
-            	
+                
                path_g.animate({ "opacity": "0" }, 600,"ease");
                path_h.animate({ "opacity": "0" }, 600,"ease"); 
               path_i.animate({ "opacity": "0" }, 600,"ease"); 
@@ -212,4 +219,8 @@ $(function() {
 
 
 
+
 });
+
+    
+

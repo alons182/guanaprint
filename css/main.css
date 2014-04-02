@@ -66,7 +66,7 @@ p{margin:0 0 10px}
 figure img{width:100%}
 .left{float:left}
 .right{float:right}
-#menu{background:#222;font-size:16px;}
+#menu{background:#222;font-size:16px;z-index:99;}
 #menu li::after{margin-left:60px}
 #menu li a{line-height:40px;font-family:'Lato',sans-serif;text-transform:uppercase}
 #menu li a:hover{background-color:rgba(0,0,0,0.2);color:#00adee}
@@ -97,9 +97,22 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #contact .map{max-width:99.5% !important;margin:0;padding:0}
 #contact iframe{width:100%;height:415px}
 #contact > div{padding:20px 20px 0}
-#home > div{padding:150px 20px 0;}
-#home > div #logo img{width:100%}
-#home > div p{color:#a6a8ab;text-align:center}
+#home .cycle-slideshow{padding:0;max-width:760px;margin:0 auto;}
+#home .cycle-slideshow .home-service{width:760px;height:600px;}
+#home .cycle-slideshow .home-service img{width:100%;height:auto}
+#home .cycle-slideshow .home-service h2{position:absolute;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;-ms-transition:all 0.5s ease;transition:all 0.5s ease;z-index:0}
+#home .cycle-slideshow .home-service.slide1 h2{top:350px;left:-450px}
+#home .cycle-slideshow .home-service.slide2 h2{top:100px;right:-550px}
+#home .cycle-slideshow .home-service.slide3 h2{top:0;left:-300px}
+#home .cycle-slideshow .home-service.slide4 h2{top:450px;right:-300px}
+#home .cycle-slideshow .cycle-slide-active.slide1 h2{left:0}
+#home .cycle-slideshow .cycle-slide-active.slide2 h2{right:80px}
+#home .cycle-slideshow .cycle-slide-active.slide3 h2{left:0}
+#home .cycle-slideshow .cycle-slide-active.slide4 h2{right:80px}
+#home .cycle-slideshow .cycle-sentinel.slide1 h2{left:0}
+#home #prev,#home #next{color:#fff;position:absolute;z-index:99;bottom:212px;cursor:pointer;background:#00adee;height:150px;width:70px;-webkit-box-shadow:1px 2px 3px rgba(0,0,0,0.5);box-shadow:1px 2px 3px rgba(0,0,0,0.5);line-height:150px;text-align:center}
+#home #prev{left:0}
+#home #next{right:0}
 #services > div{padding:20px 20px 0;max-width:650px;overflow:hidden;margin-bottom:20px;}
 #services > div #pf{float:left;}
 #services > div #pf figure{max-width:35%;position:absolute;right:0;top:0}

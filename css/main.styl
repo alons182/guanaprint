@@ -49,6 +49,8 @@ figure
 #menu 
 	background rgb(34, 34, 34)
 	font-size 16px
+	z-index 99
+
 
 	li::after
 		margin-left 60px
@@ -178,16 +180,84 @@ section > div
 
 	
 
-#home > div
-	padding 150px 20px 0px
+#home 
+	.cycle-slideshow
+		padding 0
+		max-width 760px
+		margin 0 auto
+		
+		.home-service
+			width 760px
+			height 600px
+			
 
-	#logo
-		//width 500px
-		img 
-			width 100%
-	p 
-		color $gris
+
+			img 
+				width 100%
+				height auto
+			h2
+				position absolute
+				transition all .5s ease
+				z-index 0
+				
+			&.slide1
+				h2
+					top 350px
+					left -450px
+			&.slide2
+				h2
+					top 100px
+					right -550px
+			&.slide3
+				h2
+					top 0
+					left -300px
+			&.slide4
+				h2
+					top 450px
+					right -300px
+		.cycle-slide-active
+			
+			&.slide1
+				h2
+					left 0
+
+			&.slide2
+				h2
+					right 80px
+			&.slide3
+				h2
+					left 0
+			&.slide4
+				h2
+					right 80px
+		.cycle-sentinel
+			
+				&.slide1
+					h2
+						left 0
+				
+
+	#prev
+	#next
+		color #FFF
+		position absolute
+		z-index 99
+		bottom 212px
+		cursor pointer
+		background $celeste
+		height 150px 
+		width 70px
+		box-shadow 1px 2px 3px rgba(0,0,0,.5)
+		line-height 150px
 		text-align center
+		
+
+	#prev
+		left 0
+	#next
+		right 0
+
 #services > div
 	padding 20px 20px 0px
 	max-width 650px
