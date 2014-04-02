@@ -44,7 +44,7 @@ require.config({
     }
 });
 
-require(['jquery','mmenu','raphael','cycle2','form','./logo','./formvalidation'], function ($) {
+require(['jquery','mmenu','raphael','./logo','cycle2','form','./formvalidation'], function ($) {
 	  
 	
 	var $menu = $('#menu');
@@ -99,16 +99,7 @@ require(['jquery','mmenu','raphael','cycle2','form','./logo','./formvalidation']
 		);
 
 
-	//INPUT FILE 
-	document.getElementById("uploadBtn").onchange = function () {
-    document.getElementById("uploadFile").value = this.value;
-
-     
-
-	};
- 
-
-	
+		
 
 
 
