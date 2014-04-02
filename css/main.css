@@ -111,7 +111,7 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #home .cycle-slideshow .cycle-slide-active.slide3 h2{left:0}
 #home .cycle-slideshow .cycle-slide-active.slide4 h2{right:80px}
 #home .cycle-slideshow .cycle-sentinel.slide1 h2{left:0}
-#home #prev,#home #next{color:#fff;position:absolute;z-index:100;bottom:212px;cursor:pointer;background:#00adee;height:150px;width:70px;-webkit-box-shadow:1px 2px 3px rgba(0,0,0,0.5);box-shadow:1px 2px 3px rgba(0,0,0,0.5);line-height:150px;text-align:center}
+#home #prev,#home #next{color:#fff;position:absolute;z-index:100;bottom:212px;cursor:pointer;background:#00adee;height:150px;width:70px;-webkit-box-shadow:1px 2px 3px rgba(0,0,0,0.5);box-shadow:1px 2px 3px rgba(0,0,0,0.5);line-height:150px;text-align:center;font-size:1.5em}
 #home #prev{left:0}
 #home #next{right:0}
 #services > div{padding:20px 20px 0;max-width:650px;overflow:hidden;margin-bottom:20px;}
