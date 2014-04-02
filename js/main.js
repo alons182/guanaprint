@@ -44,7 +44,7 @@ require.config({
     }
 });
 
-require(['jquery', 'cycle2','mmenu','./logo','./formvalidation'], function ($) {
+require(['jquery', 'cycle2','mmenu','form','./logo','./formvalidation'], function ($) {
 	  
 	
 	var $menu = $('#menu');
