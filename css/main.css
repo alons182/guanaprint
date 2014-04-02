@@ -100,7 +100,7 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #home .logo-mobile{width:85%;padding-top:70px;display:none;color:#a6a8ab;text-align:center;margin:0 auto;}
 #home .logo-mobile img{width:100%}
 #home .logo-mobile span{display:block;padding:.5em}
-#home .cycle-slideshow{padding:0;max-width:760px;margin:0 auto;overflow:hidden;}
+#home .cycle-slideshow{padding:0;max-width:760px;margin:0 auto;overflow:hidden;position:relative;}
 #home .cycle-slideshow .home-service{width:760px;height:600px;}
 #home .cycle-slideshow .home-service img{width:100%;height:auto}
 #home .cycle-slideshow .home-service h2{position:absolute;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;-ms-transition:all 0.5s ease;transition:all 0.5s ease;z-index:0}
