@@ -66,7 +66,7 @@ p{margin:0 0 10px}
 figure img{width:100%}
 .left{float:left}
 .right{float:right}
-#menu{background:#222;font-size:16px;z-index:99;}
+#menu{background:#222;font-size:16px;}
 #menu li::after{margin-left:60px}
 #menu li a{line-height:40px;font-family:'Lato',sans-serif;text-transform:uppercase}
 #menu li a:hover{background-color:rgba(0,0,0,0.2);color:#00adee}
@@ -104,13 +104,13 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #home .cycle-slideshow .home-service.slide1 h2{top:350px;left:-450px}
 #home .cycle-slideshow .home-service.slide2 h2{top:100px;right:-550px}
 #home .cycle-slideshow .home-service.slide3 h2{top:0;left:-300px}
-#home .cycle-slideshow .home-service.slide4 h2{top:450px;right:-300px}
+#home .cycle-slideshow .home-service.slide4 h2{top:150px;right:-300px}
 #home .cycle-slideshow .cycle-slide-active.slide1 h2{left:0}
 #home .cycle-slideshow .cycle-slide-active.slide2 h2{right:80px}
 #home .cycle-slideshow .cycle-slide-active.slide3 h2{left:0}
 #home .cycle-slideshow .cycle-slide-active.slide4 h2{right:80px}
 #home .cycle-slideshow .cycle-sentinel.slide1 h2{left:0}
-#home #prev,#home #next{color:#fff;position:absolute;z-index:99;bottom:212px;cursor:pointer;background:#00adee;height:150px;width:70px;-webkit-box-shadow:1px 2px 3px rgba(0,0,0,0.5);box-shadow:1px 2px 3px rgba(0,0,0,0.5);line-height:150px;text-align:center}
+#home #prev,#home #next{color:#fff;position:absolute;z-index:100;bottom:212px;cursor:pointer;background:#00adee;height:150px;width:70px;-webkit-box-shadow:1px 2px 3px rgba(0,0,0,0.5);box-shadow:1px 2px 3px rgba(0,0,0,0.5);line-height:150px;text-align:center}
 #home #prev{left:0}
 #home #next{right:0}
 #services > div{padding:20px 20px 0;max-width:650px;overflow:hidden;margin-bottom:20px;}
@@ -150,6 +150,9 @@ html.mm-opened .mm-page{left:60px}
 #services > div #pf figure{top:120px;max-width:35%}
 #services > div #gf figure{max-width:35%;right:0;left:inherit;bottom:75px}
 #menu #logo{display:none}
+#home .cycle-slideshow{top:50px;max-width:500px;}
+#home .cycle-slideshow .home-service{width:500px;}
+#home .cycle-slideshow .home-service h2{top:350px !important}
 }@media all and (min-width:500px){#page a#open-icon-header{display:none}
 }@media all and (max-width:499px){#open-icon-menu{display:none}
 section h1{font-size:2.8em}
@@ -160,5 +163,10 @@ section h2{font-size:1em}
 #services > div #dg h2{font-size:1em;}
 #services > div #dg h2 span{font-size:.9em}
 #contact .map{max-width:99.1% !important}
+#home{height:500px;}
+#home .cycle-slideshow{top:100px;max-width:350px;}
+#home .cycle-slideshow .home-service{width:350px;}
+#home .cycle-slideshow .home-service h2{top:300px !important}
+#home #prev,#home #next{height:100px;width:45px;line-height:100px}
 }@media all and (min-width:900px){#open-icon-menu{display:none}
 }
