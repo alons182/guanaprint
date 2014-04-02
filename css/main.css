@@ -60,7 +60,7 @@ table{border-collapse:collapse;border-spacing:0}
 .icon-menu:before{content:"\e605"}
 .icon-list:before{content:"\e606"}
 html,body{margin:0;padding:0;width:100%;height:100%}
-body{color:#eee;line-height:22px;font-family:'Lato',sans-serif;font-size:16px;min-width:360px;-webkit-text-size-adjust:none;background:#666;color:#fff}
+body{color:#eee;line-height:22px;font-family:'Lato',sans-serif;font-size:16px;min-width:320px;-webkit-text-size-adjust:none;background:#666;color:#fff}
 h1{margin:0 0 10px;color:#fff;line-height:1;font-size:55px;font-weight:700}
 p{margin:0 0 10px}
 figure img{width:100%}
