@@ -50,15 +50,16 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
-@font-face{font-family:'guanaprint';src:url("../fonts/guanaprint.eot");src:url("../fonts/guanaprint.eot?#iefix") format('embedded-opentype'),url("../fonts/guanaprint.ttf") format('truetype'),url("../fonts/guanaprint.woff") format('woff'),url("../fonts/guanaprint.svg#guanaprint") format('svg');font-weight:normal;font-style:normal}
-[class*="icon-"]{font-family:'guanaprint';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:'guanaprint';src:url("../fonts/guanaprint.eot?-yu118j");src:url("../fonts/guanaprint.eot?#iefix-yu118j") format('embedded-opentype'),url("../fonts/guanaprint.woff?-yu118j") format('woff'),url("../fonts/guanaprint.ttf?-yu118j") format('truetype'),url("../fonts/guanaprint.svg?-yu118j#guanaprint") format('svg');font-weight:normal;font-style:normal}
+[class^="icon-"],[class*=" icon-"]{font-family:'guanaprint';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-home:before{content:"\e600"}
 .icon-stack:before{content:"\e601"}
-.icon-users:before{content:"\e602"}
-.icon-phone:before{content:"\e603"}
-.icon-upload:before{content:"\e604"}
-.icon-menu:before{content:"\e605"}
-.icon-list:before{content:"\e606"}
+.icon-phone:before{content:"\e602"}
+.icon-upload:before{content:"\e603"}
+.icon-users:before{content:"\e604"}
+.icon-googleplus:before{content:"\e605"}
+.icon-facebook:before{content:"\e606"}
+.icon-twitter:before{content:"\e607"}
 html,body{margin:0;padding:0;width:100%;height:100%}
 body{color:#eee;line-height:22px;font-family:'Lato',sans-serif;font-size:16px;min-width:320px;-webkit-text-size-adjust:none;background:#666;color:#fff}
 h1{margin:0 0 10px;color:#fff;line-height:1;font-size:55px;font-weight:700}
@@ -122,6 +123,12 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #services > div #gf{float:right;margin-right:115px;}
 #services > div #gf figure{max-width:30%;position:absolute;left:0;bottom:0}
 #services > div #dg{position:absolute;right:0;bottom:0}
+#about > div{padding:20px 20px 0;max-width:650px;}
+#about > div .bg_txt{background:#fff;color:#a6a8ab;font-weight:300;padding:.5em;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:1px 2px 5px rgba(0,0,0,0.5);box-shadow:1px 2px 5px rgba(0,0,0,0.5)}
+#about > div a{font-size:2em;color:#ec038a;text-decoration:none;display:inline-block;margin:.1em}
+#about > div p{line-height:1.5em}
+#about > div .icon-facebook:hover{color:#0056b8}
+#about > div .icon-googleplus:hover{color:#dd4b39}
 .field-wrapper{margin:0;clear:both;position:relative;overflow:visible;margin:0 0 10px 0;}
 .field-wrapper label{font-weight:500;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding-bottom:.2em;max-width:550px}
 .field-wrapper input[type="text"],.field-wrapper input[type="password"],.field-wrapper input[type="email"],.field-wrapper textarea,.field-wrapper #uploadFile{width:90%;max-width:550px;position:relative;min-height:26px;background-color:#fff;border:2px solid #c8c8c8}
