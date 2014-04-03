@@ -34,6 +34,7 @@ gulp.task('requirejsBuild', function() {
             raphael: 'vendor/raphael-min',
             cycle2: 'vendor/jquery.cycle2.min'
             
+            
      
         },
         shim: {
@@ -60,6 +61,7 @@ gulp.task('requirejsBuild', function() {
             deps: ['jquery'],
             exports: 'cycle2'
         }
+
 
         
     },

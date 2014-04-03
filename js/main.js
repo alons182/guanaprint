@@ -10,6 +10,7 @@ require.config({
         mmenu : 'vendor/jquery.mmenu.min.all',
         raphael: 'vendor/raphael-min',
         cycle2: 'vendor/jquery.cycle2.min'
+        
             
 
        
@@ -40,6 +41,7 @@ require.config({
             deps: ['jquery'],
             exports: 'cycle2'
         }
+        
         
     }
 });
@@ -97,6 +99,9 @@ require(['jquery','mmenu','./logo','cycle2','form','./formvalidation'], function
 				}
 			}
 		);
+
+
+
 
 
 		
