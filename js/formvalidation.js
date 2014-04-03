@@ -46,7 +46,7 @@ $("#uploadform").validate({
 
 		  submitHandler: function(form) {
 		  	
-		 	var url = "/guanaprint/helpers/upload.php",
+		 	var url = "/helpers/upload.php",
 				progress = $('.progress'),
 				bar = $('.bar'),
 				percent = $('.percent'),
