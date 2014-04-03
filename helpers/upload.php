@@ -37,7 +37,7 @@
 	
 
 			if($result=='ok'){
-				$emailTo = 'alonso@avotz.com';
+				$emailTo = 'alonso@avotz.com, alons182@gmail.com';
 			    $subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
 			    
 			    $body = '<html><body>';
