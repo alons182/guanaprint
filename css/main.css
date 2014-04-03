@@ -87,15 +87,17 @@ section h2{background:#fff;color:#ec038a;font-weight:300;padding:.5em;-webkit-bo
 section h2 span{font-weight:700;font-size:1.2em;text-transform:uppercase}
 section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #home{background:#fff}
-#about{background:#fff100}
+#about{background:#00adee}
 #services{background:#ec038a;height:650px}
 #upload{background:#a6a8ab}
 #upload > div{padding:20px 20px 0;}
 #upload > div .progress{position:relative;width:400px;border:1px solid #ddd;padding:1px;-webkit-border-radius:3px;border-radius:3px;top:-36px;left:88px;display:none;}
 #upload > div .progress .bar{background-color:#00adee;width:0%;height:20px;-webkit-border-radius:3px;border-radius:3px}
 #upload > div .progress .percent{position:absolute;display:inline-block;top:3px;left:48%;font-size:12px}
-#contact{background:#00adee;}
-#contact .map{max-width:99.5% !important;margin:0;padding:0}
+#contact{background:#fff100;}
+#contact p{color:#000}
+#contact .bg_txt{background:#fff;color:#a6a8ab;font-weight:300;padding:.5em;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:1px 2px 5px rgba(0,0,0,0.5);box-shadow:1px 2px 5px rgba(0,0,0,0.5)}
+#contact .map{max-width:99.5% !important;margin:10px 0 0 0;padding:0}
 #contact iframe{width:100%;height:415px}
 #contact > div{padding:20px 20px 0}
 #home .logo-mobile{width:85%;padding-top:70px;display:none;color:#a6a8ab;text-align:center;margin:0 auto;}
@@ -124,8 +126,7 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #services > div #gf figure{max-width:30%;position:absolute;left:0;bottom:0}
 #services > div #dg{position:absolute;right:0;bottom:0}
 #about > div{padding:20px 20px 0;max-width:650px;}
-#about > div .bg_txt{background:#fff;color:#a6a8ab;font-weight:300;padding:.5em;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:1px 2px 5px rgba(0,0,0,0.5);box-shadow:1px 2px 5px rgba(0,0,0,0.5)}
-#about > div a{font-size:2em;color:#ec038a;text-decoration:none;display:inline-block;margin:.1em}
+#about > div a{font-size:2em;color:#fff;text-decoration:none;display:inline-block;margin:.1em}
 #about > div p{line-height:1.5em}
 #about > div .icon-facebook:hover{color:#0056b8}
 #about > div .icon-googleplus:hover{color:#dd4b39}
