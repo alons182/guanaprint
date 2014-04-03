@@ -129,6 +129,7 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #about > div a{font-size:3em;color:#fff;text-decoration:none;display:inline-block;margin:.1em}
 #about > div p{line-height:1.5em;}
 #about > div p span{font-weight:700}
+#about > div p .big-font{font-size:1.3em}
 #about > div figure{width:450px;margin:0 auto}
 #about > div .icon-facebook:hover{color:#0056b8}
 #about > div .icon-googleplus:hover{color:#dd4b39}
