@@ -49,7 +49,7 @@
 				$body .= "<tr><td><strong>URL del Archivo:</strong> </td><td>" . $link . "</td></tr>";
 				$body .= "</table>";
 				$body .= "</body></html>";
-			    $headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email . "\r\nCC:".$email."\r\n". "MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=utf-8\r\n";
+			    $headers = 'From: ' .' <alonso@avotz.com>' . "\r\n" . 'Reply-To: ' . $email . "\r\nCC:".$email."\r\n". "MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=utf-8\r\n";
 
 
 			    mail($emailTo, $subject, $body, $headers);
