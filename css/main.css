@@ -125,7 +125,7 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #services > div #gf{float:right;margin-right:115px;}
 #services > div #gf figure{max-width:30%;position:absolute;left:0;bottom:0}
 #services > div #dg{position:absolute;right:0;bottom:0}
-#about > div{padding:20px 20px 0;max-width:650px;}
+#about > div{padding:20px 20px 20px;max-width:650px;}
 #about > div a{font-size:3em;color:#fff;text-decoration:none;display:inline-block;margin:.1em}
 #about > div p{line-height:1.5em;}
 #about > div p span{font-weight:700}
@@ -183,5 +183,8 @@ section h2{font-size:1em}
 #home .cycle-slideshow .home-service{width:350px;}
 #home .cycle-slideshow .home-service h2{top:300px !important}
 #home #prev,#home #next{display:none;height:100px;width:45px;line-height:100px}
+#about > div a{font-size:2em}
+#about > div figure{display:none}
+#about{height:auto}
 }@media all and (min-width:900px){#open-icon-menu{display:none}
 }
