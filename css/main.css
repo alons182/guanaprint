@@ -127,9 +127,12 @@ section > div{margin:auto;padding:225px 20px 0;max-width:500px}
 #services > div #dg{position:absolute;right:0;bottom:0}
 #about > div{padding:20px 20px 0;max-width:650px;}
 #about > div a{font-size:3em;color:#fff;text-decoration:none;display:inline-block;margin:.1em}
-#about > div p{line-height:1.5em}
+#about > div p{line-height:1.5em;}
+#about > div p span{font-weight:700}
+#about > div figure{width:450px;margin:0 auto}
 #about > div .icon-facebook:hover{color:#0056b8}
 #about > div .icon-googleplus:hover{color:#dd4b39}
+#about{height:675px}
 .field-wrapper{margin:0;clear:both;position:relative;overflow:visible;margin:0 0 10px 0;}
 .field-wrapper label{font-weight:500;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;padding-bottom:.2em;max-width:550px}
 .field-wrapper input[type="text"],.field-wrapper input[type="password"],.field-wrapper input[type="email"],.field-wrapper textarea,.field-wrapper #uploadFile{width:90%;max-width:550px;position:relative;min-height:26px;background-color:#fff;border:2px solid #c8c8c8}
