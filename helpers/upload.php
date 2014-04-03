@@ -24,7 +24,7 @@
 	}
 	$nombre_final = basename('archivo_'.substr(sha1(rand(1,999999)),0,-30).'_'.substr($name,0,3).'_'.date("Ymd").'.'.$extension);
 
-	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/guanaprint/uploads/'.$nombre_final.'" title="Imagen">'.$nombre_final.'</a>';
+	$link = '<a href="'.$_SERVER['HTTP_HOST'] .'/uploads/'.$nombre_final.'" title="Imagen">'.$nombre_final.'</a>';
 	
 	$uploadfile = $uploaddir . $nombre_final;
        
@@ -41,7 +41,7 @@
 			    $subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
 			    
 			    $body = '<html><body>';
-				$body .= '<img src="http://sandbox.avotz.com/guanaprint/img/logo_mail.png" alt="Guanaprint" />';
+				$body .= '<img src="http://www.guanaprint.com/img/logo_mail.png" alt="Guanaprint" />';
 				$body .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
 				$body .= "<tr style='background: #eee;'><td><strong>Nombre:</strong> </td><td>" . strip_tags($name) . "</td></tr>";
 				$body .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($email) . "</td></tr>";
