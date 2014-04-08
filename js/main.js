@@ -110,8 +110,11 @@ require(['jquery','mmenu','./logo','cycle2','inview','form','./formvalidation'],
 
 	$('#contact').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		  if (isInView) {
-		    
-		   $('#contact').find('div.map').show();
+		    var mapIframe = $('#contact').find('div.map').children('iframe');
+		    var href = mapIframe.data('src');
+
+		    if(mapIframe.attr('src') === '')
+		    	mapIframe.attr('src',href);
 		 }
 	});
 
