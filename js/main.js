@@ -110,8 +110,8 @@ require(['jquery','mmenu','./logo','cycle2','inview','form','./formvalidation'],
 
 	$('#contact').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
 		  if (isInView) {
-		    var mapIframe = $('#contact').find('div.map').children('iframe');
-		    var href = mapIframe.data('src');
+		    var mapIframe = $(this).find('div.map').children('iframe'),
+		    	href = mapIframe.data('src');
 
 		    if(mapIframe.attr('src') === '')
 		    	mapIframe.attr('src',href);
