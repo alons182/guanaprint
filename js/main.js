@@ -9,7 +9,8 @@ require.config({
         form:'vendor/jquery.form.min',
         mmenu : 'vendor/jquery.mmenu.min.all',
         raphael: 'vendor/raphael-min',
-        cycle2: 'vendor/jquery.cycle2.min'
+        cycle2: 'vendor/jquery.cycle2.min',
+        inview:'vendor/jquery.inview.min',
         
             
 
@@ -40,13 +41,18 @@ require.config({
         'cycle2': {
             deps: ['jquery'],
             exports: 'cycle2'
+        },
+        'inview':
+        {
+            deps: ['jquery'],
+            exports: 'inview'
         }
         
         
     }
 });
 
-require(['jquery','mmenu','./logo','cycle2','form','./formvalidation'], function ($) {
+require(['jquery','mmenu','./logo','cycle2','inview','form','./formvalidation'], function ($) {
 	  
 	
 	var $menu = $('#menu');
@@ -99,6 +105,15 @@ require(['jquery','mmenu','./logo','cycle2','form','./formvalidation'], function
 				}
 			}
 		);
+
+
+
+	$('#contact').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+		  if (isInView) {
+		    
+		   $('#contact').find('div.map').show();
+		 }
+	});
 
 
 

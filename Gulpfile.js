@@ -32,7 +32,8 @@ gulp.task('requirejsBuild', function() {
             form:'vendor/jquery.form.min',
             mmenu : 'vendor/jquery.mmenu.min.all',
             raphael: 'vendor/raphael-min',
-            cycle2: 'vendor/jquery.cycle2.min'
+            cycle2: 'vendor/jquery.cycle2.min',
+            inview:'vendor/jquery.inview.min',
             
             
      
@@ -60,6 +61,11 @@ gulp.task('requirejsBuild', function() {
         'cycle2': {
             deps: ['jquery'],
             exports: 'cycle2'
+        },
+        'inview':
+        {
+            deps: ['jquery'],
+            exports: 'inview'
         }
 
 
