@@ -6,6 +6,8 @@
 public/
 uploads/
 node_modules/
+guanaprint.sublime-project
+guanaprint.sublime-workspace
 
 #################
 ## Eclipse
