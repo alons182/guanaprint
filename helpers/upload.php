@@ -28,7 +28,26 @@
 	
 	$uploadfile = $uploaddir . $nombre_final;
        
-   if ($_FILES['uploadBtn']['size'] <= 209715200) { 
+	function checkFileExtension($ext)
+	{
+	    if ($ext == 'ai' || $ext == 'pdf' || $ext == 'jpg' || $ext == 'jpeg' || $ext ==
+	        'gif' || $ext == 'eps' || $ext == 'tif' || $ext == 'png' || $ext == 'xls' || $ext ==
+	        'xlsx' || $ext == 'doc' || $ext == 'docx' || $ext == 'ppt' || $ext == 'pptx' ||
+	        $ext == 'zip' || $ext == 'rar' || $ext == 'sitx' || $ext == 'psd' || $ext ==
+	        'indd' || $ext == 'dng') {
+	        $pass = (int)1;
+	    } else {
+	        $pass = (int)0;
+	    }
+	    return (int)$pass;
+	}
+
+	$ext = substr(strrchr($_FILES['uploadBtn']['name'], "."), 1);
+	$fileAccepted = checkFileExtension($ext);
+	$fileSize = $_FILES['uploadBtn']['size'];
+
+       
+   if ($fileAccepted==1 && $fileSize <= 209715200) { 
    	
     	if (move_uploaded_file($_FILES['uploadBtn']['tmp_name'], $uploadfile)) {
 	   		
@@ -65,7 +84,7 @@
 		   $data = array('message' => 'Error al subir el archivo. Verifique que no sobrepase el limite de 64mb');
 		}
     }else
-   		 $data = array('message' => 'Error Archivo Muy grande');
+   		 $data = array('message' => 'Error Archivo Muy grande o tipo invalido');
 	
 	
 
