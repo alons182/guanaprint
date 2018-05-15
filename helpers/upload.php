@@ -1,4 +1,12 @@
 <?php 
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+
 	$data =  $_POST;
 
 	$uploaddir = '../uploads/';
@@ -50,34 +58,77 @@
    if ($fileAccepted==1 && $fileSize <= 209715200) { 
    	
     	if (move_uploaded_file($_FILES['uploadBtn']['tmp_name'], $uploadfile)) {
-	   		
-
-	   		
+		
+			if ($result == 'ok') {
 	
+				$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+				try {
+			//Server settings
+					$mail->SMTPDebug = 2;                                 // Enable verbose debug output
+					$mail->isSMTP();                                      // Set mailer to use SMTP
+					$mail->Host = 'mail.avotz.com';  // Specify main and backup SMTP servers
+					$mail->SMTPAuth = true;                               // Enable SMTP authentication
+					$mail->Username = 'kuzanagi';                 // SMTP username
+					$mail->Password = 'FmXGag*;de^[Lr;p=44v%`)\/';                           // SMTP password
+					$mail->SMTPSecure = null;                            // Enable TLS encryption, `ssl` also accepted
+					$mail->Port = 25;                                    // TCP port to connect to
 
-			if($result=='ok'){
-				$emailTo = 'alonso@avotz.com';//'info@guanaprint.com, ivan@guanaprint.com, recepcion@guanaprint.com';
-			    $subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
+			//Recipients
+					$mail->setFrom('info@guanaprint.com', 'Mailer');
+					$mail->addAddress('alonso@avotz.com');     // Add a recipient
+					$mail->addReplyTo($email, 'Information');
+
+					$body = '<html><body>';
+					$body .= '<img src="http://www.guanaprint.com/img/logo_mail.png" alt="Guanaprint" />';
+					$body .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
+					$body .= "<tr style='background: #eee;'><td><strong>Nombre:</strong> </td><td>" . strip_tags($name) . "</td></tr>";
+					$body .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($email) . "</td></tr>";
+					$body .= "<tr><td><strong>Descripción:</strong> </td><td>" . strip_tags($comments) . "</td></tr>";
+					$body .= "<tr><td><strong>URL del Archivo:</strong> </td><td>" . $link . "</td></tr>";
+					$body .= "</table>";
+					$body .= "</body></html>";
+
+			//Content
+					$mail->isHTML(true);                                  // Set email format to HTML
+					$mail->Subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
+					$mail->Body = $body;
+				
+
+					$mail->send();
+
+					$data = array('message' => 'Archivo subido Exitosamente.');
+
+				} catch (Exception $e) {
+					//echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+					$data = array('message' => 'Error: '. $mail->ErrorInfo);
+				}
+				
+			}
+		
+
+			// if($result=='ok'){
+			// 	$emailTo = 'alonso@avotz.com';//'info@guanaprint.com, ivan@guanaprint.com, recepcion@guanaprint.com';
+			//     $subject = 'Desde el formulario de Archivo del Sitio Guanaprint - Submitted message from '.$name;
 			    
-			    $body = '<html><body>';
-				$body .= '<img src="http://www.guanaprint.com/img/logo_mail.png" alt="Guanaprint" />';
-				$body .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
-				$body .= "<tr style='background: #eee;'><td><strong>Nombre:</strong> </td><td>" . strip_tags($name) . "</td></tr>";
-				$body .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($email) . "</td></tr>";
-				$body .= "<tr><td><strong>Descripción:</strong> </td><td>" . strip_tags($comments) . "</td></tr>";
-				$body .= "<tr><td><strong>URL del Archivo:</strong> </td><td>" . $link . "</td></tr>";
-				$body .= "</table>";
-				$body .= "</body></html>";
-			    $headers = 'From: ' .' <info@guanaprint.com>' . "\r\n" . 'Reply-To: ' . $email . "\r\nCC:".$email."\r\n". "MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=utf-8\r\n";
+			//     $body = '<html><body>';
+			// 	$body .= '<img src="http://www.guanaprint.com/img/logo_mail.png" alt="Guanaprint" />';
+			// 	$body .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
+			// 	$body .= "<tr style='background: #eee;'><td><strong>Nombre:</strong> </td><td>" . strip_tags($name) . "</td></tr>";
+			// 	$body .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($email) . "</td></tr>";
+			// 	$body .= "<tr><td><strong>Descripción:</strong> </td><td>" . strip_tags($comments) . "</td></tr>";
+			// 	$body .= "<tr><td><strong>URL del Archivo:</strong> </td><td>" . $link . "</td></tr>";
+			// 	$body .= "</table>";
+			// 	$body .= "</body></html>";
+			//     $headers = 'From: ' .' <info@guanaprint.com>' . "\r\n" . 'Reply-To: ' . $email . "\r\nCC:".$email."\r\n". "MIME-Version: 1.0\r\n"."Content-Type: text/html; charset=utf-8\r\n";
 
 
-			    mail($emailTo, $subject, $body, $headers);
+			//     mail($emailTo, $subject, $body, $headers);
 			        
 			    
 			    
-			}
+			// }
 
-			$data = array('message' => 'Archivo subido Exitosamente.');
+			//$data = array('message' => 'Archivo subido Exitosamente.');
 
 	   
 		} else {
