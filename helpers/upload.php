@@ -74,9 +74,9 @@ require '../vendor/autoload.php';
 					//$mail->Port = 25;                                    // TCP port to connect to
 
 			//Recipients
-					$mail->setFrom('info@guanaprint.com', 'Guanaprint');
+					$mail->setFrom('info@guanaprint.com', 'Formulario');
 					$mail->addAddress('alonso@avotz.com');     // Add a recipient
-					$mail->addReplyTo($email, 'Guanaprint');
+					$mail->addReplyTo($email, $name);
 
 					$body = '<html><body>';
 					$body .= '<img src="http://www.guanaprint.com/img/logo_mail.png" alt="Guanaprint" />';
