@@ -70,7 +70,7 @@ require '../vendor/autoload.php';
 					$mail->SMTPAuth = true;                               // Enable SMTP authentication
 					$mail->Username = 'kuzanagi';                 // SMTP username
 					$mail->Password = 'FmXGag*;de^[Lr;p=44v%`)\/';                           // SMTP password
-					$mail->SMTPSecure = null;                            // Enable TLS encryption, `ssl` also accepted
+					//$mail->SMTPSecure = null;                            // Enable TLS encryption, `ssl` also accepted
 					$mail->Port = 25;                                    // TCP port to connect to
 
 			//Recipients
