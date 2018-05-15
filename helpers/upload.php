@@ -75,7 +75,9 @@ require '../vendor/autoload.php';
 
 			//Recipients
 					$mail->setFrom('info@guanaprint.com', 'Formulario');
-					$mail->addAddress('alonso@avotz.com');     // Add a recipient
+					$mail->addAddress('info@guanaprint.com');     // Add a recipient
+				    $mail->addAddress('ivan@guanaprint.com');     // Add a recipient
+				    $mail->addAddress('recepcion@guanaprint.com');     // Add a recipient
 					$mail->addReplyTo($email, $name);
 
 					$body = '<html><body>';
