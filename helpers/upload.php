@@ -64,14 +64,14 @@ require '../vendor/autoload.php';
 				$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 				try {
 			//Server settings
-					$mail->SMTPDebug = 2;                                 // Enable verbose debug output
-					$mail->isSMTP();                                      // Set mailer to use SMTP
-					$mail->Host = 'mail.avotz.com';  // Specify main and backup SMTP servers
-					$mail->SMTPAuth = true;                               // Enable SMTP authentication
-					$mail->Username = 'kuzanagi';                 // SMTP username
-					$mail->Password = 'FmXGag*;de^[Lr;p=44v%`)\/';                           // SMTP password
-					$mail->SMTPSecure = false;                            // Enable TLS encryption, `ssl` also accepted
-					$mail->Port = 25;                                    // TCP port to connect to
+					//$mail->SMTPDebug = 2;                                 // Enable verbose debug output
+					//$mail->isSMTP();                                      // Set mailer to use SMTP
+					//$mail->Host = 'mail.avotz.com';  // Specify main and backup SMTP servers
+					//$mail->SMTPAuth = true;                               // Enable SMTP authentication
+					//$mail->Username = 'kuzanagi';                 // SMTP username
+					//$mail->Password = 'FmXGag*;de^[Lr;p=44v%`)\/';                           // SMTP password
+					//$mail->SMTPSecure = false;                            // Enable TLS encryption, `ssl` also accepted
+					//$mail->Port = 25;                                    // TCP port to connect to
 
 			//Recipients
 					$mail->setFrom('info@guanaprint.com', 'Mailer');
