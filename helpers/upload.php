@@ -1,10 +1,10 @@
 <?php 
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
 //Load Composer's autoloader
 require 'vendor/autoload.php';
+
+require 'PHPMailer\PHPMailer\PHPMailer';
+require 'PHPMailer\PHPMailer\Exception';
+
 
 
 	$data =  $_POST;
